@@ -1,0 +1,36 @@
+Arguments: 
+  /home/dum3r/.nvm/versions/node/v14.15.5/bin/node /home/dum3r/.nvm/versions/node/v14.15.5/bin/yarn init
+
+PATH: 
+  /home/dum3r/.rvm/gems/ruby-3.0.1/bin:/home/dum3r/.rvm/gems/ruby-3.0.1@global/bin:/home/dum3r/.rvm/rubies/ruby-3.0.1/bin:/home/dum3r/.nvm/versions/node/v14.15.5/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/dum3r/scripts:/home/dum3r/.rvm/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.5
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/home/dum3r/.nvm/versions/node/v14.15.5/lib/node_modules/yarn/lib/cli.js:136216:13)
+      at Interface.emit (events.js:315:20)
+      at Interface._ttyWrite (readline.js:875:16)
+      at ReadStream.onkeypress (readline.js:213:10)
+      at ReadStream.emit (events.js:315:20)
+      at emitKeys (internal/readline/utils.js:345:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1144:36)
+      at ReadStream.emit (events.js:315:20)
+      at addChunk (internal/streams/readable.js:309:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
