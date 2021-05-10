@@ -1,9 +1,12 @@
 import { content } from './index';
 
 function Navbar() {
+  const header = document.createElement('header');
   const nav = document.createElement('nav');
   const navItems = ['Home', 'Menu', 'About', 'Contact'];
   const navLinks = document.createElement('ul');
+  nav.classList.add('navbar');
+  navLinks.classList.add('nav-links');
 
   navItems.forEach((item) => {
     const li = document.createElement('li');
@@ -15,7 +18,8 @@ function Navbar() {
     navLinks.appendChild(li);
   });
   nav.appendChild(navLinks);
-  content.appendChild(nav);
+  header.appendChild(nav);
+  content.appendChild(header);
 }
 
 export default Navbar;

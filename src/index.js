@@ -2,6 +2,7 @@ import { Home } from './home';
 import { Menu } from './menu';
 import { About } from './about';
 import { Contact } from './contact';
+import './styles.css';
 
 export const content = document.querySelector('#content');
 
