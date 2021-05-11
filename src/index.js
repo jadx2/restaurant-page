@@ -10,9 +10,9 @@ Home();
 
 document.addEventListener('click', (e) => {
   e.preventDefault();
-  const target = e.target.textContent;
+  const target = e.target;
 
-  switch (target) {
+  switch (target.textContent) {
     case 'Home':
       Home();
       break;

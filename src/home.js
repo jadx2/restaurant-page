@@ -10,7 +10,7 @@ function homeCretion() {
   const button = document.createElement('button');
   title.classList.add('home-title');
   main.classList.add('main');
-  container.classList.add('container');
+  container.classList.add('home-container');
   title.textContent = 'Le Boulangerie';
   text.classList.add('presentation');
   text.textContent =

@@ -80,14 +80,20 @@ a {
   height: 100%;
 }
 
+.home-container,
 .container {
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+
+.container {
+  background-color: var(--foreground-light);
+  opacity: 0.8;
 }
 
 .home-title {
@@ -126,6 +132,42 @@ a {
 .button:hover {
   background-color: var(--foreground-dark);
   color: var(--foreground-light);
+}
+
+.title {
+  position: relative;
+  color: var(--foreground-dar);
+  font-family: 'Herr Von Muellerhoff', sans-serif;
+  font-size: 9rem;
+  margin-bottom: 4rem;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 0.5rem;
+  background-color: var(--foreground-dark);
+  bottom: 0;
+  left: 20%;
+}
+
+.menu {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.menuItem {
+  text-align: center;
+}
+
+.item-title {
+  margin-bottom: 1rem;
+}
+
+.itemPrice {
+  margin-bottom: 2rem;
 }
 
 .footer {
