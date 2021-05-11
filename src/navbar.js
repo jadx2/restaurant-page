@@ -3,7 +3,12 @@ import { content } from './index';
 function Navbar() {
   const header = document.createElement('header');
   const nav = document.createElement('nav');
-  const navItems = ['Home', 'Menu', 'About', 'Contact'];
+  const navItems = [
+    'Home',
+    'Menu',
+    'About us',
+    'Contact us',
+  ];
   const navLinks = document.createElement('ul');
   nav.classList.add('navbar');
   navLinks.classList.add('nav-links');

@@ -1,3 +1,7 @@
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
 import { Home } from './home';
 import { Menu } from './menu';
 import { About } from './about';
@@ -10,22 +14,22 @@ Home();
 
 document.addEventListener('click', (e) => {
   e.preventDefault();
-  const target = e.target;
+  const target = e.target.innerText;
 
-  switch (target.textContent) {
+  switch (target) {
     case 'Home':
       Home();
       break;
     case 'Menu':
       Menu();
       break;
-    case 'About':
+    case 'About us':
       About();
       break;
-    case 'Contact':
+    case 'Contact us':
       Contact();
       break;
     default:
-      Home();
+      return;
   }
 });

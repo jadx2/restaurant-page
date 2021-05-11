@@ -92,8 +92,7 @@ a {
 }
 
 .container {
-  background-color: var(--foreground-light);
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .home-title {
@@ -138,7 +137,7 @@ a {
   position: relative;
   color: var(--foreground-dar);
   font-family: 'Herr Von Muellerhoff', sans-serif;
-  font-size: 9rem;
+  font-size: 7rem;
   margin-bottom: 4rem;
 }
 
@@ -160,14 +159,52 @@ a {
 
 .menuItem {
   text-align: center;
+  font-size: 1.75rem;
+  line-height: 1.5;
 }
 
 .item-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .itemPrice {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.img {
+  width: 500px;
+  margin-right: 2rem;
+}
+
+.about-desc {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+.contact-us {
+  display: flex;
+}
+
+.contact-img {
+  width: 500px;
+}
+
+.contact-media {
+  display: flex;
+}
+
+.media-link {
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .footer {
