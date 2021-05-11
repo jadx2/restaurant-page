@@ -23,7 +23,7 @@ body {
 #content {
   width: 100vw;
   height: 100vh;
-  background: url('images/pexels-pixabay-461060.jpg');
+  background: url('images/bread1.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -73,6 +73,59 @@ a {
 .nav-link:hover::after {
   transform-origin: center;
   transform: scale(1);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.home-title {
+  position: relative;
+  color: var(--foreground-light);
+  font-family: 'Herr Von Muellerhoff', sans-serif;
+  font-size: 10rem;
+  margin-bottom: 4rem;
+}
+
+.home-title:after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 0.5rem;
+  background-color: var(--foreground-light);
+  bottom: -1rem;
+  left: 20%;
+}
+.presentation {
+  color: var(--foreground-light);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.button {
+  background-color: var(--foreground-light);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--foreground-dark);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background-color: var(--foreground-dark);
+  color: var(--foreground-light);
 }
 
 .footer {
