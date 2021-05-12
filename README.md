@@ -1,7 +1,7 @@
 # Le Boulangerie
 
 
-  > A bakery page with tabbed navigation created dynamically with Javasript and Webpack.
+  > A bakery page with tabbed navigation created dynamically with Javascript and Webpack.
   
 ![Screenshot](./src/images/capture1.png)
 ![Screenshot](./src/images/capture2.png)
