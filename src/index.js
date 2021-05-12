@@ -13,7 +13,6 @@ export const content = document.querySelector('#content');
 Home();
 
 document.addEventListener('click', (e) => {
-  e.preventDefault();
   const target = e.target.innerText;
 
   switch (target) {

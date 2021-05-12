@@ -39,11 +39,11 @@ function contactCreation() {
   contactPhone.innerHTML =
     '<i class="fas fa-phone"></i> +51 475-2333';
   contactWeb.classList.add('contact-item');
-  contactWeb.setAttribute(
-    'href',
-    'https://jaimdelmar.netlify.app/'
-  );
-  contactWeb.innerHTML = 'https://jaimdelmar.netlify.app/';
+  contactWeb.href = 'https://jaimdelmar.netlify.app/';
+  contactWeb.rel = 'nofollow';
+  contactWeb.setAttribute('target', '_blank');
+  contactWeb.innerHTML =
+    '<i class="fas fa-globe"></i> Website';
   contactMedia.classList.add('contact-media');
   title.classList.add('title');
   main.classList.add('main');
@@ -54,9 +54,9 @@ function contactCreation() {
     const li = document.createElement('li');
     const link = document.createElement('a');
     link.classList.add('media-link');
-    link.href = 'https://www.google.com';
+    link.href = mediaItem.url;
     link.rel = 'nofollow';
-    // link.setAttribute('target', '_blank');
+    link.setAttribute('target', '_blank');
     link.innerHTML = mediaItem.icon;
     li.appendChild(link);
     contactMedia.appendChild(li);

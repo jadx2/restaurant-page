@@ -16,7 +16,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.75rem;
+  line-height: 1.5;
   font-family: Montserrat, sans-serif;
 }
 
@@ -58,7 +59,7 @@ a {
   font-size: 2rem;
 }
 
-.nav-link::after {
+.nav-link:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -70,7 +71,7 @@ a {
   transition: transform 0.3s;
 }
 
-.nav-link:hover::after {
+.nav-link:hover:after {
   transform-origin: center;
   transform: scale(1);
 }
@@ -91,11 +92,16 @@ a {
   margin: 0 auto;
 }
 
-.container {
-  background-color: rgba(255, 255, 255, 0.8);
+.home-container {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.home-title {
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.home-title,
+.title {
   position: relative;
   color: var(--foreground-light);
   font-family: 'Herr Von Muellerhoff', sans-serif;
@@ -103,13 +109,14 @@ a {
   margin-bottom: 4rem;
 }
 
-.home-title:after {
+.home-title:after,
+.title:after {
   content: '';
   position: absolute;
   width: 60%;
   height: 0.5rem;
   background-color: var(--foreground-light);
-  bottom: -1rem;
+  bottom: 0;
   left: 20%;
 }
 .presentation {
@@ -134,21 +141,12 @@ a {
 }
 
 .title {
-  position: relative;
   color: var(--foreground-dar);
-  font-family: 'Herr Von Muellerhoff', sans-serif;
   font-size: 7rem;
-  margin-bottom: 4rem;
 }
 
 .title:after {
-  content: '';
-  position: absolute;
-  width: 60%;
-  height: 0.5rem;
   background-color: var(--foreground-dark);
-  bottom: 0;
-  left: 20%;
 }
 
 .menu {
@@ -159,8 +157,6 @@ a {
 
 .menuItem {
   text-align: center;
-  font-size: 1.75rem;
-  line-height: 1.5;
 }
 
 .item-title {
@@ -186,8 +182,6 @@ a {
   display: flex;
   align-items: center;
   width: 500px;
-  font-size: 1.75rem;
-  line-height: 1.5;
 }
 
 .contact-us {
@@ -198,19 +192,29 @@ a {
   width: 500px;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+}
+
 .contact-media {
   display: flex;
 }
 
 .media-link {
-  font-size: 2rem;
+  font-size: 4rem;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 .footer {
   text-align: center;
   color: var(--foreground-light);
-  font-size: 1.75rem;
   border-top: 2px solid var(--foreground-light);
   padding: 1rem 0;
 }
