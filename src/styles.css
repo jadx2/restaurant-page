@@ -59,7 +59,7 @@ a {
   font-size: 2rem;
 }
 
-.nav-link:after {
+.nav-link::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -71,7 +71,7 @@ a {
   transition: transform 0.3s;
 }
 
-.nav-link:hover:after {
+.nav-link:hover::after {
   transform-origin: center;
   transform: scale(1);
 }
@@ -109,8 +109,8 @@ a {
   margin-bottom: 4rem;
 }
 
-.home-title:after,
-.title:after {
+.home-title::after,
+.title::after {
   content: '';
   position: absolute;
   width: 60%;
@@ -119,6 +119,7 @@ a {
   bottom: 0;
   left: 20%;
 }
+
 .presentation {
   color: var(--foreground-light);
   font-size: 3rem;
@@ -145,7 +146,7 @@ a {
   font-size: 7rem;
 }
 
-.title:after {
+.title::after {
   background-color: var(--foreground-dark);
 }
 
