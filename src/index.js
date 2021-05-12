@@ -2,13 +2,43 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
-import { Home } from './home';
-import { Menu } from './menu';
-import { About } from './about';
-import { Contact } from './contact';
+import Navbar from './navbar';
+import Footer from './footer';
+import homeCreation from './home';
+import menuCreation from './menu';
+import aboutCreation from './about';
+import contactCreation from './contact';
 import './styles.css';
 
-export const content = document.querySelector('#content');
+const content = document.querySelector('#content');
+
+function Home() {
+  content.innerHTML = '';
+  Navbar(content);
+  homeCreation(content);
+  Footer(content);
+}
+
+function Menu() {
+  content.innerHTML = '';
+  Navbar(content);
+  menuCreation(content);
+  Footer(content);
+}
+
+function About() {
+  content.innerHTML = '';
+  Navbar(content);
+  aboutCreation(content);
+  Footer(content);
+}
+
+function Contact() {
+  content.innerHTML = '';
+  Navbar(content);
+  contactCreation(content);
+  Footer(content);
+}
 
 Home();
 
@@ -29,6 +59,5 @@ document.addEventListener('click', (e) => {
       Contact();
       break;
     default:
-      return;
   }
 });

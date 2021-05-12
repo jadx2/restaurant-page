@@ -1,6 +1,4 @@
-import { content } from './index';
-
-function Navbar() {
+export default function Navbar(content) {
   const header = document.createElement('header');
   const nav = document.createElement('nav');
   const navItems = [
@@ -26,5 +24,3 @@ function Navbar() {
   header.appendChild(nav);
   content.appendChild(header);
 }
-
-export default Navbar;

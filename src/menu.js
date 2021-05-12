@@ -1,8 +1,4 @@
-import Navbar from './navbar';
-import Footer from './footer';
-import { content } from './index';
-
-function menuCreation() {
+export default function menuCreation(content) {
   const menuContent1 = [
     {
       name: 'Sourdough Bread',
@@ -114,12 +110,3 @@ function menuCreation() {
   main.appendChild(container);
   content.appendChild(main);
 }
-
-function Menu() {
-  content.innerHTML = '';
-  Navbar();
-  menuCreation();
-  Footer();
-}
-
-export { Menu };

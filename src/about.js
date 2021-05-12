@@ -1,9 +1,6 @@
-import Navbar from './navbar';
-import Footer from './footer';
-import { content } from './index';
 import Pic from './images/bread-kneeding.jpg';
 
-function aboutCreation() {
+export default function aboutCreation(content) {
   const main = document.createElement('main');
   const container = document.createElement('div');
   const title = document.createElement('h2');
@@ -18,8 +15,7 @@ function aboutCreation() {
   image.classList.add('img');
   image.setAttribute('src', Pic);
   text.classList.add('about-desc');
-  text.textContent =
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati. Dolorem deleniti aliquid ratione, obcaecati distinctio dicta qui eaque libero hic odio expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati. Dolorem deleniti aliquid ratione, obcaecati distinctio dicta qui eaque libero hic odio expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati. Dolorem deleniti aliquid ratione, obcaecati distinctio dicta qui eaque libero hic odio expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati.';
+  text.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati. Dolorem deleniti aliquid ratione, obcaecati distinctio dicta qui eaque libero hic odio expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati. Dolorem deleniti aliquid ratione, obcaecati distinctio dicta qui eaque libero hic odio expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati. Dolorem deleniti aliquid ratione, obcaecati distinctio dicta qui eaque libero hic odio expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, explicabo et accusantium asperiores ipsum id consequatur obcaecati.';
 
   aboutContent.appendChild(image);
   aboutContent.appendChild(text);
@@ -28,12 +24,3 @@ function aboutCreation() {
   main.appendChild(container);
   content.appendChild(main);
 }
-
-function About() {
-  content.innerHTML = '';
-  Navbar();
-  aboutCreation();
-  Footer();
-}
-
-export { About };

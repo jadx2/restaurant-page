@@ -1,9 +1,6 @@
-import Navbar from './navbar';
-import Footer from './footer';
-import { content } from './index';
 import Pic from './images/map.jpg';
 
-function contactCreation() {
+export default function contactCreation(content) {
   const media = [
     {
       icon: '<i class="fab fa-twitter-square"></i>',
@@ -33,17 +30,14 @@ function contactCreation() {
   contactImage.setAttribute('src', Pic);
   contactInfo.classList.add('contact-info');
   contactAddr.classList.add('contact-item');
-  contactAddr.innerHTML =
-    '<i class="fas fa-map-marker-alt"></i> Ave. Dasso 191, San Isidro, Lima, Peru';
+  contactAddr.innerHTML = '<i class="fas fa-map-marker-alt"></i> Ave. Dasso 191, San Isidro, Lima, Peru';
   contactPhone.classList.add('contact-item');
-  contactPhone.innerHTML =
-    '<i class="fas fa-phone"></i> +51 475-2333';
+  contactPhone.innerHTML = '<i class="fas fa-phone"></i> +51 475-2333';
   contactWeb.classList.add('contact-item');
   contactWeb.href = 'https://jaimdelmar.netlify.app/';
   contactWeb.rel = 'nofollow';
   contactWeb.setAttribute('target', '_blank');
-  contactWeb.innerHTML =
-    '<i class="fas fa-globe"></i> Website';
+  contactWeb.innerHTML = '<i class="fas fa-globe"></i> Website';
   contactMedia.classList.add('contact-media');
   title.classList.add('title');
   main.classList.add('main');
@@ -74,12 +68,3 @@ function contactCreation() {
   main.appendChild(container);
   content.appendChild(main);
 }
-
-function Contact() {
-  content.innerHTML = '';
-  Navbar();
-  contactCreation();
-  Footer();
-}
-
-export { Contact };
