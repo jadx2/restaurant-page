@@ -13,7 +13,7 @@ The main aim of this project is to understand how to manipulate the DOM with mod
 
 ## Live Demo
 
-![You can check the live demo here!](https://jadx2.github.io/restaurant-page/)
+[You can check the live demo here!](https://jadx2.github.io/restaurant-page/)
 
 ## Built With
 
